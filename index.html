@@ -2,10 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url='https://apps.apple.com/app/apple-store/id6736928388?pt=127382831&ct=yolkaiapp&mt=8'" />
     <title>Redirecting...</title>
+    <script>
+        function detectDevice() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            // Check if device is Android
+            if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=app.yolkai';
+                return;
+            }
+            
+            // Default to iOS App Store
+            window.location.href = 'https://apps.apple.com/app/apple-store/id6736928388?pt=127382831&ct=prepsolver&mt=8';
+        }
+        
+        // Run detection when page loads
+        window.onload = detectDevice;
+    </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://apps.apple.com/app/apple-store/id6736928388?pt=127382831&ct=yolkaiapp&mt=8">click here</a>.</p>
+    <p>If you are not redirected, please select your device:</p>
+    <p>
+        <a href="https://play.google.com/store/apps/details?id=app.yolkai">Android (Google Play Store)</a>
+        <br>
+        <a href="https://apps.apple.com/app/apple-store/id6736928388?pt=127382831&ct=prepsolver&mt=8">iOS (App Store)</a>
+    </p>
 </body>
 </html>
