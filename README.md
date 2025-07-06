@@ -1,1 +1,1 @@
-# yolkai.app legal 
+# yolkai.app
