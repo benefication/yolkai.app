@@ -29,8 +29,8 @@
         }
 
         .app-icon {
-            width: 140px;
-            height: 140px;
+            width: 80px;
+            height: 80px;
             margin: 0 auto 50px;
             border-radius: 28px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -232,15 +232,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">
-            <img src="../assets/app-icon.png" alt="Yolk AI App Icon">
+
+        <div class="title-section" style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 30px;">
+            <div class="app-icon" style="width: 60px; height: 60px; margin: 0; border-radius: 12px; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); overflow: hidden; flex-shrink: 0;">
+                <img src="../assets/app-icon.png" alt="Yolk AI App Icon" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+            </div>
+            <h1 style="margin: 0; line-height: 1;">Yolk AI Prompts</h1>
         </div>
         
-        <h1>Yolk AI - Free AI Prompts</h1>
+        <img src="../images/truthprompt.png" alt="Truth Prompt" style="display: block; margin: 20px auto; max-width: 100%; height: auto; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); border-radius: 12px;">
         
-        <p class="description">
-            Download the app for free AI prompts, coding tips, study questions, and more
-        </p>
+        <div class="instructions">
+            <h2 style="font-size: 1.8rem; color: #7B42F6; margin-bottom: 20px;">Instructions:</h2>
+            <div class="step" style="font-size: 1.4rem; margin-bottom: 15px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <strong>Step 1:</strong> Download the free app
+            </div>
+            <div class="step" style="font-size: 1.4rem; margin-bottom: 15px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <strong>Step 2:</strong> Look for the AI Prompts notebook
+            </div>
+            <div class="step" style="font-size: 1.4rem; margin-bottom: 40px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <strong>Step 3:</strong> Share the prompt to your phone
+            </div>
+        </div>
         
         <p class="tiktok-notice" style="font-size: 20px; margin-top: 10px; margin-bottom: 20px; color: #ff5858;">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="#000" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
